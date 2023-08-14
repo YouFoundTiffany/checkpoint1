@@ -1,0 +1,328 @@
+/* ROOT VARIABLES */
+:root {
+    --licorice: #211814;
+    --battleship-gray: #859095;
+    --coffee: #61492d;
+    --coffee-light: #c7955c;
+    --cadet-gray: #a3a3a5;
+    --charcoal: #304353;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CUSTOM CLASSES */
+.bttn {
+    background-color: var(--licorice);
+    color: var(--cadet-gray);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bttn:hover {
+    background-color: var(--coffee);
+    color: var(--licorice);
+}
+
+
+.bnt-news:hover {
+    background-color: var(--cadet-gray) !important;
+    text-decoration: var(--licorice) !important;
+}
+
+.left-border-HC {
+    border-left-color: var(--coffee);
+    border-left-width: 5px;
+    border-left-style: solid;
+}
+
+.heroCard-copy-transparent {
+    background-color: #a3a3a591;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, .3);
+}
+
+/* brdshadow {
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, .2);
+} */
+
+.posrel {
+    position: relative;
+
+}
+
+.posabs {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    bottom: -111px;
+}
+
+.test-card-sides {
+    height: 30vh;
+    width: 32vh;
+    font-size: small;
+    color: var(--licorice);
+    background-color: var(--coffee-light);
+    border-radius: 2.4%;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, .2);
+    overflow-y: hidden;
+
+}
+
+.test-card-center {
+    height: 40vh;
+    width: 36vh;
+    font-size: small;
+    color: var(--licorice);
+    background-color: var(--coffee-light);
+    border-radius: 2.4%;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, .2);
+    overflow-y: hidden;
+
+}
+
+.fsmall {
+    font-size: small;
+}
+
+/* turn off flex  */
+/* .trnoffFlex {
+    display: block !important;
+} */
+
+
+/* CAROUSEL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    max-width: 600px;
+    max-height: 400px;
+    margin-block: 2rem;
+    margin-inline: auto;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+li {
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 3rem;
+
+    aspect-ratio: 2/1;
+    /* width: 100%; */
+    flex-shrink: 0;
+    scroll-snap-align: start;
+
+}
+
+li:nth-child(odd) {
+    background-color: var(--coffee);
+}
+
+li:nth-child(even) {
+    background-color: var(--licorice);
+}
+
+/* ROW VIEW HEIGHTS */
+
+.test-viewHeight {
+    height: 50vh;
+}
+
+@keyframes colorchange {
+    0% {
+        color: var(--battleship-gray);
+    }
+
+    50% {
+        color: var(--coffee-light);
+    }
+
+    100% {
+        color: var(--battleship-gray);
+    }
+}
+
+.flashIcon {
+    animation: colorchange 1s ease-in-out 2s infinite;
+}
+
+/* UTILITY CLASSES */
+/* FONTS */
+
+.font-merri {
+    font-family: 'Merriweather', serif;
+}
+
+/* SHADOWS AND GLOWS */
+.shadow {
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, .2);
+}
+
+.txtshadow {
+    text-shadow: 2px 2px hsla(0, 0%, 0%, .2);
+}
+
+.glow {
+    box-shadow: #d8d8db 0 0 19px 19px;
+}
+
+.inset-shadow {
+    box-shadow: inset 0 4px 4px 0 hsla(0, 0%, 0%, 0.40);
+}
+
+/* BACKGROUND IMAGES */
+/* Hero Card background image */
+.bg-heroCard {
+    height: 110vh;
+    background-image: url(https://images.unsplash.com/photo-1633894660288-003802421573?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-size: 137%;
+    background-position: 5%, 35%;
+}
+
+/* call to action image, butterfly kitten, size and rotate */
+.call2Act {
+    width: 340px;
+    height: 420px;
+    object-fit: cover;
+    object-position: 25% 25%;
+    transform: rotatey(180deg);
+    border-radius: 8px;
+    object-position: center;
+}
+
+@media (max-width: 768px) {
+    .centered-cta {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* MEDIA QUERIES */
+
+/* disappear the hearo card comments card */
+@media(max-width:768px) {
+    div.disappear {
+        display: none;
+    }
+}
+
+/* Hero Card auto height in mobile */
+@media (max-width:768px) {
+    div.autoheight {
+        height: auto;
+    }
+}
+
+/* Hero Card, change background image to color in mobile screens only, anything under 768px */
+@media (max-width: 768px) {
+    .bg-heroCard {
+        height: auto;
+        background-image: none;
+        background-color: var(--charcoal)
+    }
+}
+
+/* removing the spillage box affects in mobile size screens */
+
+@media (max-width: 768px) {
+    .posabs {
+        position: static;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+    }
+}
+
+
+
+/* UTILITIES COLORS */
+.bg-licorice {
+    background-color: var(--licorice);
+}
+
+.bg-battleship {
+    background-color: var(--battleship-gray);
+}
+
+.bg-coffee {
+    background-color: var(--coffee);
+}
+
+.bg-coffee-light {
+    background-color: var(--coffee-light);
+}
+
+.bg-cadet {
+    background-color: var(--cadet-gray);
+}
+
+.bg-charcoal {
+    background-color: var(--charcoal);
+}
+
+/* FONT COLORS */
+.f-licorice {
+    color: var(--licorice);
+}
+
+.f-battleship {
+    color: var(--battleship-gray);
+}
+
+.f-coffee {
+    color: var(--coffee);
+}
+
+.f-cadet {
+    color: var(--cadet-gray);
+}
+
+.f-charcoal {
+    color: var(--charcoal);
+}
+
+.aic {
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SCSS Gradient
+    $gradient-top: linear-gradient(0deg, #211814ff, #859095ff, #61492Dff, #A3A3A5ff, #304353ff);
+    $gradient-right: linear-gradient(90deg, #211814ff, #859095ff, #61492Dff, #A3A3A5ff, #304353ff);
+    $gradient-bottom: linear-gradient(180deg, #211814ff, #859095ff, #61492Dff, #A3A3A5ff, #304353ff);
+    $gradient-left: linear-gradient(270deg, #211814ff, #859095ff, #61492Dff, #A3A3A5ff, #304353ff);
+    $gradient-top-right: linear-gradient(45deg, #211814ff, #859095ff, #61492Dff, #A3A3A5ff, #304353ff);
+    $gradient-bottom-right: linear-gradient(135deg, #211814ff, #859095ff, #61492Dff, #A3A3A5ff, #304353ff);
+    $gradient-top-left: linear-gradient(225deg, #211814ff, #859095ff, #61492Dff, #A3A3A5ff, #304353ff);
+    $gradient-bottom-left: linear-gradient(315deg, #211814ff, #859095ff, #61492Dff, #A3A3A5ff, #304353ff);
+    $gradient-radial: radial-gradient(#211814ff, #859095ff, #61492Dff, #A3A3A5ff, #304353ff);
+     */
+
+/* SCSS RGB */
+/* $licorice: rgba(33, 24, 20, 1);
+$battleship-gray: rgba(133, 144, 149, 1);
+$coffee: rgba(97, 73, 45, 1);
+$cadet-gray: rgba(163, 163, 165, 1);
+$charcoal: rgba(48, 67, 83, 1); */

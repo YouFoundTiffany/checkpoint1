@@ -4,11 +4,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 
-<body>
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Ragdolls are the Best Cats😺</title>
+</head>
+<!-- SECTION DEBUG -->
+<style>
+    body.debug .container,
+    body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
+
+    body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
+
+
+<!-- <--! debug-->
+
+<body class="font-merri f-cadet">
+
+    <header class="container-fluid sticky-top">
+        <!-- SECTION NAVBAR  -->
+        <section class="row text-start bg-licorice shadowcur">
+            <div class="col-12 m-0 p-2">
+                <h1 class="m-0"><i class="mdi mdi-cat flashIcon"></i> RAGDOLLS</h1>
+            </div>
+        </section>
+    </header>
+
+    <!-- SECTION MAIN BODY -->
+    <main class="container-fluid">
+
+        <!-- SECTION HERO CARD -->
+        <section class="row bg-heroCard p-sm-2 p-md-2">
+
+            <!-- SECTION ENTRY FORM ON HERO CARD  -->
+            <div class="col-12 col-md-5 p-2">
+                <h6 class="p-2 m-1">JOIN OUR NEWSLETTER</h6>
+                <form class="container-fluid bg-cadet rounded-bottom rounded-top">
+                    <div class="col-12 mb-6">
+                        <label for="exampleInputPassword1" class="form-label f-licorice pt-4">Name</label>
+                        <input type="name" class="form-control inset-shadow" id="exampleInputPassword1">
+                    </div>
+                    <div class="col-12 -mb-6">
+                        <label for="exampleInputEmail1" class="form-label f-licorice">Email</label>
+                        <input type="email" class="form-control inset-shadow" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text f-licorice">We'll never share your email with anyone else.
+                        </div>
+                    </div>
+
+                    <!-- PHONE AND EXTENSION -->
+                    <div class="container-fluid">
+                        <section>
+                            <!-- PHONE -->
+                            <div class="row col-12 justify-content-around">
+                                <div class="col-5 ">
+                                    <label for="exampleInputEmail1" class="form-label f-licorice">Phone</label>
+                                    <input type="phone" class="form-control inset-shadow" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <label for="exampleInputEmail1" class="form-label f-licorice">Ext</label>
+                                    <input type="ext" class="form-control inset-shadow" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="mb-1 form-check">
+                        <input type="checkbox" class="form-check-input inset-shadow" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1"></label>
+                    </div>
+                    <button type="submit" class="bttn rounded-pill btn f-cadet bg-licorice mb-4">Submit</button>
+                </form>
+            </div>
+            <!-- SECTION END ENTRY FORM -->
+            <!-- SECTION HERO CARD HERO COPY -->
+            <div class="disappear col-12 col-md-7 f-licorice">
+                <div class="p-3">
+                    <p class=" m-0 fs-3 left-border-HC heroCard-copy-transparent p-2 txtshadow">
+                        Radgolls are the best cats to own,
+                        <br class=" text-center fs-2 text fst-italic fw-bold txtshadow">
+                        CHANGE MY MIND.
+                        </br>
+                        <span class="1h-sm fs-6 txtshadow">Ragdoll cats stand out as the ultimate companions with their
+                            gentle
+                            nature, stunning appearance, and affectionate
+                            disposition, making them a top choice for those seeking an ideal feline friend.
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION END OF HERO CARD -->
+
+        <!-- SECTION MAIN BODY -->
+
+        <!-- SECTION STATS -->
+        <section class="row posrel p-3 bg-licorice justify-content-start align-items-center">
+            <div class=" order-2 order-md-1 col-12 col-md-5">
+                <h3 class="m-4 pt-2"><i class="mdi mdi-shield-star-outline flashIcon"></i> Embracing Tranquility: The
+                    Allure of
+                    Ragdoll Cats</h3>
+                <p class="m-4">Ragdoll cats, a breed known for their serene presence and captivating beauty, have carved
+                    a special place in the hearts
+                    of cat enthusiasts around the world.</p>
+            </div>
+            <div
+                class="posabs shadow fsmall align-items-startorder-1 order-md-2 col-12 col-md-5 m-0 px-4 f-licorice bg-battleship rounded-bottom rounded-top">
+                <d1v class="">
+                    <p class="pb-1 pt-4"><i class="mdi mdi-cat"></i><span class="fw-bold m-0"> Gentle
+                            Giants:</span class="fw-normal"> Large and gentle, known for their calm demeanor.
+                    </p>
+                </d1v>
+                <div>
+                    <p class="p-1"><i class="mdi mdi-cat"></i><span class="fw-bold m-0">
+                            Distinctive Appearance:</span> Striking blue eyes, semi-longhaired coat in varied patterns.
+                    </p>
+                </div>
+                <div>
+                    <p class="p-1"><i class="mdi mdi-cat"></i><span class="fw-bold m-0"> Laid-Back Personalities:</span
+                            class="fw-normal"> Docile and
+                        cuddly,great for companionship.
+                    </p>
+                </div>
+                <div>
+                    <p class="p-1"><i class="mdi mdi-cat"></i><span class="fw-bold m-0"> Hypoallergenic Traits:</span>
+                        Produce fewer allergens, suitable for some allergies.
+                    </p>
+                </div>
+                <div>
+                    <p class="p-1"><i class="mdi mdi-cat"></i><span class="fw-bold"> Limited Street-Savviness:</span>
+                        Trusting
+                        nature, not
+                        ideal for outdoor
+                        life.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECTION CALL TO ACTION -->
+        <section class="row p-4 bg-cadet justify-content-around align-items-center centered-cta">
+            <div class="col-12 col-md-4 align-items-center">
+                <img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                    class="img-fluid call2Act" alt="butterfly sitting on ragdoll nose">
+            </div>
+            <div class="col-12 col-md-5 p-2">
+                <h4 class="f-coffee">You know you want one!</h4>
+                <p class="f-coffee">Embark on a journey of understanding and appreciation – learn more about
+                    Ragdoll
+                    cats today!"</p>
+                <a href="#srlvid" class="f-coffee"><button class="bg-battleship">
+                        Watch Video</a>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- SECTION TESTIMONIALS -->
+        <section class="row p-4 justify-content-around align-items-center bg-charcoal">
+            <!-- SECTION LEFT SIDE CARD -->
+            <div class="col-12 col-md-2 p-2 m-3 order-2 order-md-1 align-items-center test-card-sides">
+                <p class="small-font p-0 p-md-1">"Ragdolls embody the perfect blend of charm and companionship."</p>
+                <p class="small-font p-0 p-md-1">Jessica</p>
+                <p class="small-font p-0 p-md-1">Owns 3 Ragdolls</p>
+            </div>
+            <!-- SECTION CENTER CARD -->
+            <div class="col-12 col-md-2 p-2 m-3 order-1 order-md-2 test-card-center">
+                <p class="fs-2 m-0 text-center">
+                    <i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i>
+                </p>
+                <p class="small-font p-0 p-md-1">"Ragdoll cats radiate an unmistakable aura of tranquility that
+                    consistently
+                    makes them a cherished and sought-after
+                    breed."</p>
+                <p class="small-font p-0 p-md-1">Danielle</p>
+                <p class="small-font p-0 p-md-1">Owns 5 Ragdolls</p>
+            </div>
+            <!-- SECTION RIGHT SIDE CARD -->
+            <div class="col-12 col-md-2 p-2 m-3 order-3 order-md-3 test-card-sides">
+                <p class="small-font p-0 p-md-1">"Ragdolls form strong bonds with their human companions."</p>
+                <p class="small-font p-0 p-md-1">Piper</p>
+                <p class="small-font p-0 p-md-1">Owns 2 Ragdolls</p>
+            </div>
+            </div>
+        </section>
+
+
+        <!-- SECTION SECOND CALL TO ACTION -->
+        <section id="srlvid" class="row bg-licorice">
+            <div class="text-center p-2 mt-2">
+                <h3>Curious to discover the enchanting world of Ragdoll cats?</h3>
+                <p class="px-3">Dive deeper into their soothing personalities, captivating
+                    appearance, and heartwarming companionship. Uncover the reasons behind their status as beloved
+                    feline companions and
+                    explore the joys of having a Ragdoll by your side. Embark on a journey of understanding and
+                    appreciation – learn more
+                    about Ragdoll cats today!</p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9vOgfwKQckY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="">
+            <div>
+                <ul>
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1610973053414-abc5309f0a8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                            alt="ragdoll playing with ribbons">
+                    </li>
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1558674378-e4334d4fecc2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                            alt="sleeping white ragdoll kitten">
+                    </li>
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1568470010257-111aa304d53b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=868&q=80"
+                            alt="ragdoll laying on the stairs">
+                    </li>
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1620933288385-b2f6f1931d9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80"
+                            alt="ragdoll on an outdoor windowsill">
+                    </li>
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1627006114837-5686e6307fe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                            alt="front view of ragdoll">
+                    </li>
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1580560674941-e3e0fee40b96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                            alt="close up of ragdoll face">
+                    </li>
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1591324535489-9c78376631dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+                            alt="ragdoll kittens eating">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- SECTION FOOTER -->
+    <footer class="container-fluid">
+        <div class="row justify-content-between bg-cadet f-licorice">
+            <div class="col-6 p-3 m-0">
+                <h6 class="m-0">When in doubt, pet a Ragdoll.com</h6>
+            </div>
+            <div class="col-6 p-3 m-0">
+                <h6 class="text-end m-0">2023</h6>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
